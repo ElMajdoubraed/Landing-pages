@@ -1,9 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Agency from "./pages/Agency";
-import ComingSoon from "./pages/Coming-soon";
-import Mobile from "./pages/Mobile";
-import Portfolio from "./pages/Portfolio";
-import Product from "./pages/Product";
+import { Agency, ComingSoon, Mobile, Portfolio, Product } from "./pages";
+
 function App() {
   return (
     <Router>
