@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Agency, ComingSoon, Mobile, Portfolio, Product } from "./pages";
+import { Agency, ComingSoon, Home, Mobile, Portfolio, Product } from "./pages";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/" element={<Product />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );

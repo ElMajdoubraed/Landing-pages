@@ -1,0 +1,56 @@
+:root {
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.body {
+  padding-top: 55px;
+  max-width: 100%;
+  font: 1em/1.618 Inter, sans-serif;
+  width: 100%;
+  direction: ltr !important;
+  color: #224;
+  background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center /
+    cover no-repeat fixed;
+}
+
+.card {
+  width: 100%;
+  padding: 35px;
+  margin-bottom: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05, 1.05) translate(0, -5px) rotate(1.5deg);
+  transition: all 0.5s ease;
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.card-footer {
+  font-size: 0.65em;
+  color: #446;
+}
