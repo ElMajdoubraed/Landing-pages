@@ -28,4 +28,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 You can check UI [Pages Url](https://landing-pages-sepia.vercel.app/).
 
-https://landing-pages-sepia.vercel.app
+https://landing.elmajdoub.live
