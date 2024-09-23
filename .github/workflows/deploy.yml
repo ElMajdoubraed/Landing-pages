@@ -17,16 +17,20 @@ jobs:
         node-version: '14'  # or your preferred Node.js version
     
     - name: Install dependencies
-      run: npm install
+      run: npm ci
     
     - name: Build
-      run: npm run build --force
-
-    - name: Check build folder
-      run: ls
-
+      run: npm run build
+    
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # or your build output directory
+        personal_token: ${{ secrets.PAT }}  # Use PAT instead of GITHUB_TOKEN
+        publish_dir: ./build
+        publish_branch: gh-pages
+        allow_empty_commit: false
+        keep_files: false
+        force_orphan: false
+        enable_jekyll: false
+        disable_nojekyll: false
+        exclude_assets: .github
