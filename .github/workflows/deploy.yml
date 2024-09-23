@@ -20,7 +20,7 @@ jobs:
       run: npm install
     
     - name: Build
-      run: npm run build --if-present --ignore-scripts --prefer-offline --silent --unsafe-perm --no-progress --no-audit --no-optional --no-fund --loglevel=error
+      run: npm run build --force
 
     - name: Check build folder
       run: ls
